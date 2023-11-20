@@ -1,0 +1,9 @@
+$backgroundColor: #0E0E0E;
+$bodyColor: #E7E7E7;
+$bodyFont: 'Raleway', sans-serif;
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+}
