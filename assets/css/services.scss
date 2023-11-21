@@ -1,0 +1,55 @@
+
+
+.services-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.sub-icon {
+  position: relative;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 88px;
+  }
+}
+
+.services-text {
+  border-radius: 25px;
+  background-color: $darkgrey;
+  border: 2px solid $grey;
+  padding: 20px;
+  z-index: 5;
+}
+
+.icon {
+  z-index: 5;
+}
+
+#web {
+  margin-top: 10rem;
+}
+
+.line {
+  border-bottom: 2px solid $grey;
+  width: 40vw;
+  position: absolute;
+  left: 30%;
+  z-index: 1;
+}
+
+
+.background-photo {
+  width: 100vw;
+  height: 40vh;
+}

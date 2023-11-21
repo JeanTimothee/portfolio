@@ -1,9 +1,40 @@
-$backgroundColor: #0E0E0E;
-$bodyColor: #E7E7E7;
+$black: #09090B;
+$darkgrey: #101013;
+$grey: #202023;
+$white: #E8E8E8;
 $bodyFont: 'Raleway', sans-serif;
 
 body {
-  background: $backgroundColor;
-  color: $bodyColor;
+  background: $black;
+  color: $white;
   font-family: $bodyFont;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: light;
+}
+
+.section {
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+
+.section-title {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.horizontal-line {
+  border-top: 2px solid $white;
 }
