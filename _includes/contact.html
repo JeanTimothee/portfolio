@@ -1,0 +1,12 @@
+<div id="contact" style="background: url('{% link assets/img/bike.png %}') center/contain no-repeat fixed">
+  <div class="container d-flex justify-content-around">
+    <div class="contact-card">
+      <form action="{FORM_ENDPOINT}" method="POST">
+          <input  class="input" type="text" placeholder="Your name" name="name" required />
+          <input class="input" type="email" placeholder="Email" name="email" required />
+          <textarea class="input" placeholder="Your message" name="message" required></textarea>
+          <button class="input" type="submit">Send a message</button>
+      </form>
+    </div>
+  </div>
+</div>

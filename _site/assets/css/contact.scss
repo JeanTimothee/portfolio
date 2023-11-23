@@ -1,8 +1,14 @@
 #contact {
   height: 80vh;
-  position: absolute;
-  img {
-    position:absolute;
-    width: 100vw;
-  }
+  width: 100vw;
+}
+
+.contact-card {
+  border-radius: 25px;
+  background-color: $darkgrey;
+  border: 2px solid $grey;
+}
+
+#contact .input {
+  background-color: $grey;
 }
