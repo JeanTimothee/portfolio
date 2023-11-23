@@ -1,0 +1,16 @@
+#propos img {
+  height: 70vh;
+  border-radius: 25px;
+  object-fit: cover;
+  position: sticky;
+  top: 16vh;
+}
+
+#propos {
+  position: relative;
+}
+
+.vertical-line {
+  border-right: 2px solid $grey;
+  height: 10vh;
+}

@@ -6,17 +6,17 @@ body {
 
 h1 {
   font-size: 4rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 h4 {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 20px;
 }
 
 p {
   font-size: 14px;
-  font-weight: light;
+  font-weight: 200;
 }
 
 .section {
@@ -137,7 +137,7 @@ p {
   font-size: 88px;
 }
 
-.services-text {
+.card-text {
   border-radius: 25px;
   background-color: #101013;
   border: 2px solid #202023;
@@ -164,6 +164,57 @@ p {
 .background-photo {
   width: 100vw;
   height: 40vh;
+}
+
+.parallax-section {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.parallax-section::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.parallax-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #fff;
+}
+
+#propos img {
+  height: 70vh;
+  border-radius: 25px;
+  object-fit: cover;
+  position: sticky;
+  top: 16vh;
+}
+
+#propos {
+  position: relative;
+}
+
+.vertical-line {
+  border-right: 2px solid #202023;
+  height: 10vh;
+}
+
+#contact {
+  height: 80vh;
+  position: absolute;
+}
+#contact img {
+  position: absolute;
+  width: 100vw;
 }
 
 /*# sourceMappingURL=main.css.map */
