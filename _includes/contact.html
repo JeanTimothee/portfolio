@@ -1,12 +1,90 @@
-<div id="contact" style="background: url('{% link assets/img/bike.png %}') center/contain no-repeat fixed">
-  <div class="container d-flex justify-content-around">
-    <div class="contact-card">
+<!-- <div id="contact" style="background: url('{% link assets/img/bike.png %}') center/contain no-repeat fixed">
+  <div class="container d-flex justify-content-around align-items-center h-100">
+    <div class="contact-card w-50 h-50">
       <form action="{FORM_ENDPOINT}" method="POST">
+        <div>
           <input  class="input" type="text" placeholder="Your name" name="name" required />
           <input class="input" type="email" placeholder="Email" name="email" required />
+        </div>
           <textarea class="input" placeholder="Your message" name="message" required></textarea>
           <button class="input" type="submit">Send a message</button>
       </form>
     </div>
   </div>
+</div> -->
+
+
+
+
+<div id="contact" class="horizontal-line mb-5">
+
+  <h4 class="section-title">Contact</h4>
+
+  <div class="contact-wrapper">
+
+    <!-- Left contact page -->
+
+    <form id="contact-form" class="form-horizontal" role="form">
+
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="text" class="form-control" id="name" placeholder="NOM" name="name" value="" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+        </div>
+      </div>
+
+      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+
+      <button class="btn send-button" id="submit" type="submit" value="SEND">
+        <div class="alt-send-button d-flex justify-content-around align-items-center">
+          <!-- <i class="fa fa-paper-plane"></i> -->
+          <span class="send-text">ENVOYER</span>
+        </div>
+
+      </button>
+
+    </form>
+
+<!-- Left contact page -->
+
+    <div class="direct-contact-container">
+
+      <ul class="contact-list">
+        <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Biarritz, France</span></i></li>
+
+        <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:07-69-18-17-71" title="Appeler moi">(+33) 0769181771</a></span></i></li>
+
+        <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:registimothee@gmail.com" title="Envoyer moi un email">registimothee@gmail.com</a></span></i></li>
+
+      </ul>
+
+      <hr>
+      <ul class="social-media-list">
+        <li><a href="#" target="_blank" class="contact-icon">
+          <i class="fa fa-github" aria-hidden="true"></i></a>
+        </li>
+        <li><a href="#" target="_blank" class="contact-icon">
+          <i class="fa fa-codepen" aria-hidden="true"></i></a>
+        </li>
+        <li><a href="#" target="_blank" class="contact-icon">
+          <i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </li>
+        <li><a href="#" target="_blank" class="contact-icon">
+          <i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+      <hr>
+
+      <div class="copyright">&copy; TOUS DROITS RESERVES</div>
+
+    </div>
+
+
+  </div>
+
 </div>
