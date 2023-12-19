@@ -1,7 +1,6 @@
-// #contact {
-//   height: 80vh;
-//   width: 100vw;
-// }
+#contact {
+  min-height: 90vh;
+}
 
 .contact-card {
   border-radius: 25px;
@@ -32,7 +31,7 @@
 /* Left contact page */
 .form-horizontal {
   /*float: left;*/
-  max-width: 400px;
+  width: 50%;
   font-family: $bodyFont;
   font-weight: 400;
 }
@@ -60,7 +59,7 @@ textarea {
 }
 
 .alt-send-button {
-  width: 400px;
+  width: 100%;
   height: 34px;
   transition: all .2s ease-in-out;
   color: $white!important;
@@ -81,14 +80,15 @@ textarea {
 
 /* Begin Right Contact Page */
 .direct-contact-container {
-  max-width: 400px;
+  max-width: 50%;
 }
 
 /* Location, Phone, Email Section */
 .contact-list {
   list-style-type: none;
-  margin-left: -30px;
+  // margin-left: -30px;
   // padding-right: 20px;
+  padding-left: 0;
 }
 
 .list-item {
@@ -103,15 +103,15 @@ textarea {
 }
 
 .place {
-  margin-left: 62px;
+  margin-left: 20px;
 }
 
 .phone {
-  margin-left: 56px;
+  margin-left: 20px;
 }
 
 .gmail {
-  margin-left: 53px;
+  margin-left: 20px;
 }
 
 .contact-text a {
@@ -170,6 +170,9 @@ textarea {
 
 .social-media-list li:hover {
   background-color: $white;
+  path {
+    fill: $black;
+  }
 }
 
 .social-media-list li:hover:after {
@@ -230,7 +233,6 @@ hr {
     margin: 0 auto;
   }
 
-
   .name, .email, textarea {
     width: 280px;
   }
@@ -254,6 +256,10 @@ hr {
     line-height: 55px;
   }
 
+  .form-horizontal {
+    width: 100%;
+  }
+
 }
 
 @media screen and (max-width: 410px) {
@@ -268,4 +274,12 @@ hr {
     border-color: $white!important;
     outline: 0;
     box-shadow: 0 0 0 0.25rem $grey;
+}
+
+.btn {
+  padding: 0px!important;
+}
+
+path {
+  fill: $white;
 }

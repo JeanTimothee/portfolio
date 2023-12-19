@@ -1,0 +1,28 @@
+#navbar {
+  padding: 20px;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: linear-gradient(0deg, rgba(9,9,11,0) 0%, rgba(9,9,11,1) 100%);
+}
+
+.navbar-content {
+  gap: 12px;
+}
+
+.active {
+  transition: all .2s ease-in-out;
+  opacity: 1!important;
+  border-bottom: 1px solid white;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: $white;
+  opacity: 0.6;
+
+  &:hover {
+    color: $white;
+    opacity: 1;
+  }
+}

@@ -26,26 +26,37 @@
   <body>
     <div class="container">
 
-      <div id="banner" class="d-flex align-items-center">
-  <!-- <div class="elipse"></div> -->
-  <div class="title-banner">
-    <h1>Timothée Régis</h1>
-    <h2>developpement de site web</h2>
+      <div id="navbar" class="position-fixed w-100">
+  <div class=" navbar-content d-flex justify-content-end container">
+    <a href="#portfolio" class="portfolio">portfolio</a>
+    <a href="#services" class="services">services</a>
+    <a href="#propos" class="propos">a propos</a>
+    <a href="#contact" class="contact">contact</a>
   </div>
 </div>
 
 
-      <div id="portfolio" class="section horizontal-line">
+      <section id="banner" class="d-flex align-items-center">
+  <!-- <div class="elipse"></div> -->
+  <div class="title-banner cssanimation sequence fadeInBottom">
+    <h1>Timothée Régis</h1>
+    <h2>developpement de site web</h2>
+  </div>
+</section>
+
+
+      <section id="portfolio" class="section horizontal-line">
   <h4 class="section-title">portfolio</h4>
   <div class="portfolio-cards">
     <div class="portfolio-card">
       <div class="portfolio-mockup-card gom">
         <img class='img-phone' src="/assets/img/gom_smartphone_mockup.png" alt="">
         <img class='img-mac' src="/assets/img/gom_mac_mockup.png" alt="">
+        <div class="glow"></div>
       </div>
       <div class="portfolio-mockup-title">
-        <h4>GOM</h4>
-        <p>Carte interactive de sessions de sport outdoors, code from scratch</p>
+        <h4>gom</h4>
+        <p>carte interactive de sessions de sport outdoors, code from scratch</p>
       </div>
     </div>
     <div class="portfolio-card">
@@ -54,7 +65,7 @@
         <img class='img-mac' src="/assets/img/lineup_mac_mockup.png" alt="">
       </div>
       <div class="portfolio-mockup-title">
-        <h4>LINE UP TRADE</h4>
+        <h4>line up trade</h4>
         <p>e-commerce, mise en place à partir de template wordpress</p>
       </div>
     </div>
@@ -64,24 +75,25 @@
         <img class='img-mac' src="/assets/img/bdtroc_mac_mockup.png" alt="">
       </div>
       <div class="portfolio-mockup-title">
-        <h4>BDtroc</h4>
+        <h4>bdtroc</h4>
         <p>marketplace de bandes déssinées, code from scratch</p>
       </div>
     </div>
     <div class="portfolio-card">
-      <div class="portfolio-mockup-card bdtroc">
-        <h1>+</h1>
+      <div class="card portfolio-mockup-card new-project d-flex justify-content-around align-items-center">
+        <i class="fa-regular fa-square-plus"></i>
+        <div class="glow"></div>
       </div>
       <div class="portfolio-mockup-title">
-        <h4>Votre projet</h4>
+        <h4>votre projet</h4>
         <p>site custom, marketplace, cms ...</p>
       </div>
     </div>
   </div>
-</div>
+</section>
 
 
-      <div id="services-1" class="section horizontal-line">
+      <section id="services" class="section horizontal-line">
   <h4 class="section-title">services</h4>
   <div id="web" class="services-section">
     <div class="icon col-5">
@@ -93,13 +105,13 @@
     <div class="services-line col-2">
       <div class="line"></div>
     </div>
-    <div class="card-text col-5">
+    <div class="card-text col-5 cssanimation sequence fadeInBottom">
       <h4>web</h4>
       <p>En tant que développeur, je mets l'accent sur la personnalisation totale de votre site. Chaque ligne de code est façonnée pour répondre précisément à vos besoins, assurant ainsi une expérience unique et fonctionnelle.</p>
     </div>
   </div>
   <div id="design" class="services-section">
-    <div class="card-text col-5">
+    <div class="card-text col-5 cssanimation sequence fadeInBottom">
       <h4>design</h4>
       <p>Mon approche du développement web intègre non seulement un design attrayant mais aussi une expérience utilisateur fluide. Chaque détail est pensé pour respecter les normes UX/UI, garantissant ainsi un site à la fois esthétique et intuitif.</p>
     </div>
@@ -123,12 +135,12 @@
     <div class="services-line col-2">
       <div class="line"></div>
     </div>
-    <div class="card-text col-5">
+    <div class="card-text col-5 cssanimation sequence fadeInBottom">
       <h4>suivi</h4>
       <p>Grâce à une interface admin, vous aurez une autonomie sur votre site que vous pourrez facilement gérer et mettre à jour. Mon support continu assure que votre présence en ligne évolue en parallèle avec vos besoins.</p>
     </div>
   </div>
-</div>
+</section>
 
 
     </div>
@@ -145,11 +157,13 @@
 
     <div class="container">
 
-      <div id="propos" class="section">
+      <section id="propos" class="section">
   <h4 class="section-title">a propos</h4>
 
   <div class="d-flex justify-content-between">
-    <img class="col-6 img-propos" src="/assets/img/wagon.jpg" alt="">
+    <div class="col-6 img-propos">
+      <img class="" src="/assets/img/wagon.jpg" alt="Timothée Régis au Wagon">
+    </div>
     <div class="col-5 overflow">
       <div class="card-text">
         <h4 class="mb-3">formation</h4>
@@ -177,7 +191,7 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
 
       <!-- <div id="contact" style="background: url('/assets/img/bike.png') center/contain no-repeat fixed">
@@ -198,7 +212,7 @@
 
 
 
-<div id="contact" class="horizontal-line mb-5">
+<section id="contact" class="horizontal-line mb-5">
 
   <h4 class="section-title">Contact</h4>
 
@@ -247,17 +261,23 @@
 
       <hr>
       <ul class="social-media-list">
-        <li><a href="#" target="_blank" class="contact-icon">
+        <li><a href="https://github.com/JeanTimothee" target="_blank" class="contact-icon">
           <i class="fa fa-github" aria-hidden="true"></i></a>
         </li>
-        <li><a href="#" target="_blank" class="contact-icon">
-          <i class="fa fa-codepen" aria-hidden="true"></i></a>
+        <li><a href="https://www.linkedin.com/in/timotheeregis" target="_blank" class="contact-icon">
+          <i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </li>
-        <li><a href="#" target="_blank" class="contact-icon">
-          <i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <li><a href="https://www.malt.fr/profile/timotheeregis" target="_blank" class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            aria-label="Malt" role="img"
+            viewBox="0 0 512 512" width="50%"><rect
+            rx="15%"/>
+            <path
+            d="m408.4 103.8c-32.5-32.4-67.1-11.4-88.8 10.2L114.8 318.8c-21.7 21.7-44.4 54.7-10.2 88.8c34.1 34.1 67 11.4 88.7-10.3l204.8-204.8c21.7-21.6 42.7-56.3 10.3-88.7zm-195.7-8.4 43.4 43.4 44.1-44.2c3-3 6-5.8 9.1-8.4c-4.6-23.3-17.9-44.4-53.3-44.4c-35.4 0-48.7 21.2-53.2 44.5c3.3 2.9 6.6 5.8 9.9 9.1zm87.5 322.1-44.1-44.1-43.4 43.3c-3.3 3.3-6.5 6.4-9.8 9.2c5 23.8 19 45.5 53.1 45.5c34.2 0 48.3-21.9 53.2-45.7c-3-2.6-6-5.2-9-8.2zm-105.9-217h-83.6c-30.7 0-70 9.7-70 55.5c0 34.3 21.9 48.3 45.8 53.2c2.8-3.2 107.8-108.7 107.8-108.7zm231.5 2.3c-2.6 3-107.9 108.8-107.9 108.8h82.4c30.7 0 70-7.3 70-55.6c0-35.3-21.1-48.6-44.5-53.2zm-204.1-29.7 14.9-14.9-43.3-43.4c-21.7-21.7-54.6-44.4-88.8-10.2c-25 25-19.4 49.4-6.2 69.1c4.1-.3 123.4-.6 123.4-.6zm68.7 165.9-15 15 44.2 44.1c21.7 21.7 56.3 42.7 88.7 10.3c24.2-24.2 18.7-49.7 5.3-70c-4.3.3-123.2.6-123.2.6z"/>
+          </svg></a>
         </li>
-        <li><a href="#" target="_blank" class="contact-icon">
-          <i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <li><a href="https://wa.me/33769181771?text=I'm%20interested%20in%20your%20car%20for%20sale" target="_blank" class="contact-icon">
+          <i class="fa fa-whatsapp" aria-hidden="true"></i></a>
         </li>
       </ul>
       <hr>
@@ -269,7 +289,7 @@
 
   </div>
 
-</div>
+</section>
 
 
     </div>
@@ -281,6 +301,76 @@
          </div>
       </div>
     </div>
+    <script>
+      // NAVBAR start
+
+      const sections = document.querySelectorAll("section");
+      const navLi = document.querySelectorAll("#navbar a");
+      window.onscroll = () => {
+        var current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (pageYOffset >= sectionTop - 60) {
+            current = section.getAttribute("id"); }
+        });
+
+        navLi.forEach((li) => {
+          li.classList.remove("active");
+          if (li.classList.contains(current)) {
+            li.classList.add("active");
+          }
+        });
+      };
+
+      // NAVBAR end
+
+      const $card = document.querySelector('.card');
+      let bounds;
+
+      function rotateToMouse(e) {
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+        const leftX = mouseX - bounds.x;
+        const topY = mouseY - bounds.y;
+        const center = {
+          x: leftX - bounds.width / 2,
+          y: topY - bounds.height / 2
+        }
+        const distance = Math.sqrt(center.x**2 + center.y**2);
+
+        $card.style.transform = `
+          scale3d(1.07, 1.07, 1.07)
+          rotate3d(
+            ${center.y / 100},
+            ${-center.x / 100},
+            0,
+            ${Math.log(distance)* 2}deg
+          )
+        `;
+
+        $card.querySelector('.glow').style.backgroundImage = `
+          radial-gradient(
+            circle at
+            ${center.x * 2 + bounds.width/2}px
+            ${center.y * 2 + bounds.height/2}px,
+            #ffffff55,
+            #0000000f
+          )
+        `;
+      }
+
+      $card.addEventListener('mouseenter', () => {
+        bounds = $card.getBoundingClientRect();
+        document.addEventListener('mousemove', rotateToMouse);
+      });
+
+      $card.addEventListener('mouseleave', () => {
+        document.removeEventListener('mousemove', rotateToMouse);
+        $card.style.transform = '';
+        $card.style.background = '';
+      });
+    </script>
   </body>
 </html>
 

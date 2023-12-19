@@ -34,19 +34,7 @@ p {
 }
 
 #banner {
-  min-height: 90vh;
-}
-
-.elipse {
-  position: absolute;
-  z-index: 1;
-  width: 125vw;
-  height: 180vh;
-  left: -12vw;
-  top: -100vh;
-  border-radius: 50%;
-  background-color: rgba(250, 250, 250, 0.05);
-  filter: blur(50px);
+  min-height: calc(100vh - 120px);
 }
 
 .title-banner {
@@ -58,22 +46,24 @@ p {
   margin-bottom: 0px;
 }
 
-.portfolio-cards {
-  display: grid;
-  flex: none;
-  gap: 36px;
-  grid-auto-rows: minmax(0, 1fr);
-  grid-template-columns: repeat(2, minmax(200px, 1fr));
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-  height: min-content;
-  justify-content: center;
-  overflow: visible;
-  padding: 0;
-  position: relative;
-  width: 100%;
+@media screen and (min-width: 568px) {
+  .portfolio-cards {
+    display: grid;
+    flex: none;
+    gap: 50px;
+    grid-auto-rows: minmax(0, 1fr);
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    height: min-content;
+    justify-content: center;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
 }
-
 .portfolio-card {
+  cursor: pointer;
   height: 100%;
   width: 100%;
   display: flex;
@@ -83,23 +73,37 @@ p {
 }
 
 .portfolio-mockup-card {
-  height: 500px;
+  opacity: 0.9;
+  height: 400px;
   background-color: #202023;
-  border-radius: 25px;
+  border-radius: 4px;
   position: relative;
+  transition: 1s;
 }
 .portfolio-mockup-card .img-phone {
-  width: 34%;
+  width: 30%;
   position: absolute;
-  top: 16%;
+  top: 27%;
   left: 6%;
   z-index: 5;
+  transition: 1s;
 }
 .portfolio-mockup-card .img-mac {
-  width: 74%;
+  width: 69%;
   position: absolute;
-  top: 25%;
+  top: 32%;
   right: 0%;
+  transition: 1s;
+}
+
+.portfolio-card:hover .portfolio-mockup-card {
+  opacity: 1;
+}
+.portfolio-card:hover .portfolio-mockup-card .img-phone {
+  width: 34%;
+}
+.portfolio-card:hover .portfolio-mockup-card .img-mac {
+  width: 74%;
 }
 
 .gom {
@@ -112,6 +116,15 @@ p {
 
 .bdtroc {
   background: radial-gradient(circle, rgb(166, 46, 30) 0%, rgb(107, 34, 24) 95%);
+}
+
+.new-project {
+  background-color: #101013;
+  border: 2px solid #202023;
+}
+.new-project i {
+  font-size: 100px;
+  transition: 0.3s;
 }
 
 .services-section {
@@ -138,7 +151,7 @@ p {
 }
 
 .card-text {
-  border-radius: 25px;
+  border-radius: 4px;
   background-color: #101013;
   border: 2px solid #202023;
   padding: 20px;
@@ -155,7 +168,6 @@ p {
 
 .line {
   border-bottom: 2px solid #202023;
-  width: 40vw;
   position: absolute;
   left: 30%;
   z-index: 1;
@@ -191,10 +203,8 @@ p {
   color: #fff;
 }
 
-#propos img {
+.img-propos {
   height: 70vh;
-  border-radius: 25px;
-  object-fit: cover;
   position: sticky;
   top: 16vh;
 }
@@ -202,10 +212,20 @@ p {
 #propos {
   position: relative;
 }
+#propos img {
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .vertical-line {
   border-right: 2px solid #202023;
   height: 10vh;
+}
+
+#contact {
+  min-height: 90vh;
 }
 
 .contact-card {
@@ -237,7 +257,7 @@ p {
 /* Left contact page */
 .form-horizontal {
   /*float: left;*/
-  max-width: 400px;
+  width: 50%;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
@@ -265,7 +285,7 @@ textarea {
 }
 
 .alt-send-button {
-  width: 400px;
+  width: 100%;
   height: 34px;
   transition: all 0.2s ease-in-out;
   color: #E8E8E8 !important;
@@ -280,13 +300,13 @@ textarea {
 }
 /* Begin Right Contact Page */
 .direct-contact-container {
-  max-width: 400px;
+  max-width: 50%;
 }
 
 /* Location, Phone, Email Section */
 .contact-list {
   list-style-type: none;
-  margin-left: -30px;
+  padding-left: 0;
 }
 
 .list-item {
@@ -301,15 +321,15 @@ textarea {
 }
 
 .place {
-  margin-left: 62px;
+  margin-left: 20px;
 }
 
 .phone {
-  margin-left: 56px;
+  margin-left: 20px;
 }
 
 .gmail {
-  margin-left: 53px;
+  margin-left: 20px;
 }
 
 .contact-text a {
@@ -367,6 +387,9 @@ textarea {
 
 .social-media-list li:hover {
   background-color: #E8E8E8;
+}
+.social-media-list li:hover path {
+  fill: #09090B;
 }
 
 .social-media-list li:hover:after {
@@ -443,6 +466,9 @@ hr {
     height: 55px;
     line-height: 55px;
   }
+  .form-horizontal {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 410px) {
   .send-button {
@@ -455,6 +481,108 @@ hr {
   border-color: #E8E8E8 !important;
   outline: 0;
   box-shadow: 0 0 0 0.25rem #202023;
+}
+
+.btn {
+  padding: 0px !important;
+}
+
+path {
+  fill: #E8E8E8;
+}
+
+.card {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+  background-image: url(https://images.unsplash.com/photo-1557672199-6e8c8b2b8fff?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80);
+  background-size: cover;
+  position: relative;
+  transition-duration: 300ms;
+  transition-property: transform, box-shadow;
+  transition-timing-function: ease-out;
+  transform: rotate3d(0);
+}
+
+.card:hover {
+  transition-duration: 150ms;
+  box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.2666666667);
+}
+
+.card .glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: radial-gradient(circle at 50% -20%, rgba(255, 255, 255, 0.1333333333), rgba(0, 0, 0, 0.0588235294));
+}
+
+.cssanimation, .cssanimation span {
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+
+.cssanimation span {
+  display: inline-block;
+}
+
+.fadeInBottom {
+  animation-name: fadeInBottom;
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+.line {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
+  animation-name: expandWidth;
+}
+
+@keyframes expandWidth {
+  from {
+    opacity: 0.5;
+    width: 0vw;
+  }
+  to {
+    opacity: 1;
+    width: 40vw;
+  }
+}
+#navbar {
+  padding: 20px;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: linear-gradient(0deg, rgba(9, 9, 11, 0) 0%, rgb(9, 9, 11) 100%);
+}
+
+.navbar-content {
+  gap: 12px;
+}
+
+.active {
+  transition: all 0.2s ease-in-out;
+  opacity: 1 !important;
+  border-bottom: 1px solid white;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #E8E8E8;
+  opacity: 0.6;
+}
+#navbar a:hover {
+  color: #E8E8E8;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,100 @@
+.portfolio-cards {
+  h4 {
+    margin-bottom: 0px;
+  }
+}
+
+
+@media screen and (min-width: 568px)  {
+  .portfolio-cards {
+    display: grid;
+    flex: none;
+    gap: 50px;
+    grid-auto-rows: minmax(0,1fr);
+    grid-template-columns: repeat(3,minmax(200px,1fr));
+    grid-template-rows: repeat(2,minmax(0,1fr));
+    height: min-content;
+    justify-content: center;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+}
+
+.portfolio-card {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 24px;
+}
+
+.portfolio-mockup-card {
+  opacity: 0.9;
+  height: 400px;
+  background-color: $grey;
+  border-radius: $border-radius;
+  position:relative;
+
+  // tweak position with transform -> services icons
+  .img-phone {
+    width: 30%;
+    position: absolute;
+    top: 27%;
+    left: 6%;
+    z-index: 5;
+    transition: 1s;
+  }
+  .img-mac {
+    width: 69%;
+    position: absolute;
+    top: 32%;
+    right: 0%;
+    transition: 1s;
+  }
+
+  transition: 1s;
+}
+
+.portfolio-card:hover {
+  .portfolio-mockup-card {
+    opacity: 1;
+
+    .img-phone {
+      width: 34%;
+    }
+
+    .img-mac {
+      width: 74%;
+    }
+  }
+}
+
+.gom {
+  // background-color: #5ABB85;
+  background: radial-gradient(circle, rgba(90,187,133,1) 0%, rgba(59,126,89,1) 95%);
+}
+
+.lineup {
+  // background-color: #213457;
+  background: radial-gradient(circle, rgba(33,52,87,1) 0%, rgba(22,37,64,1) 95%);
+}
+
+.bdtroc {
+  // background-color: #A62E1E;
+  background: radial-gradient(circle, rgba(166,46,30,1) 0%, rgba(107,34,24,1) 95%);
+
+}
+
+.new-project {
+  background-color: $darkgrey;
+  border: 2px solid $grey;
+
+  i {
+    font-size: 100px;
+    transition: 0.3s;
+  }
+}
