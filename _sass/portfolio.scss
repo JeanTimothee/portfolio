@@ -20,6 +20,11 @@
     position: relative;
     width: 100%;
   }
+
+  .portfolio-card {
+    gap: 24px;
+    margin-bottom: 0px;
+  }
 }
 
 .portfolio-card {
@@ -29,7 +34,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 24px;
+  gap: 20px;
+  margin-bottom: 30px;
 }
 
 .portfolio-mockup-card {

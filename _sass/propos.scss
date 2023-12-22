@@ -1,7 +1,8 @@
 .img-propos {
-  height: 70vh;
+  height: 90vh;
   position: sticky;
-  top: 16vh;
+  top: 60px;
+  margin-bottom: -25px;
 }
 
 #propos {
@@ -17,4 +18,40 @@
 .vertical-line {
   border-right: 2px solid $grey;
   height: 10vh;
+}
+
+.overflow {
+  position: relative;
+}
+
+#propos {
+  .card-text {
+    width: 90%;
+    margin: auto;
+    background-color: rgba(16, 16, 19, 0.95);
+  }
+}
+
+@media screen and (min-width: 568px)  {
+  .overflow {
+    position: static;
+  }
+  .propos-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .img-propos {
+    height: 70vh;
+    top: 16vh;
+    margin-bottom: 0;
+  }
+
+  #propos {
+    .card-text {
+      width: 90%;
+      margin: auto;
+      background-color: rgba(16, 16, 19);
+    }
+  }
 }

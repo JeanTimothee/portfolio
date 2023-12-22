@@ -1,12 +1,34 @@
 .services-section {
   display: flex;
   align-items: center;
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
+}
+
+@media screen and (min-width: 568px) {
+  .services-section {
+    margin-bottom: 10rem;
+  }
+
+  .sub-icon {
+    img {
+      display: block!important;
+    }
+    i {
+      left: 50%!important;
+      font-size: 88px;
+      background-color: $darkgrey!important;
+    }
+  }
+}
+
+.icon-right {
+  left: 20%!important;
 }
 
 .sub-icon {
   position: relative;
   img {
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -16,9 +38,10 @@
   i {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 80%;
     transform: translate(-50%, -50%);
-    font-size: 88px;
+    font-size: 70px;
+    background-color: $black;
   }
 }
 
@@ -34,8 +57,15 @@
   z-index: 5;
 }
 
+
 #web {
-  margin-top: 10rem;
+  margin-top: 4rem;
+}
+
+@media screen and (min-width: 568px) {
+  #web {
+    margin-top: 10rem;
+  }
 }
 
 .line {
@@ -45,15 +75,49 @@
   z-index: 1;
 }
 
+.line-left {
+  left: 20%;
+}
+
+.line-right {
+  left: 38%;
+}
+
+@media screen and (min-width: 568px) {
+  .line {
+    left: 30%!important;
+  }
+}
 
 .background-photo {
   width: 100vw;
   height: 40vh;
 }
 
+.text-mobile {
+  display: block;
+}
+
+.text-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 568px) {
+  .parallax-section {
+    height: 50vh;
+  }
+  .text-mobile {
+    display: none;
+  }
+
+  .text-desktop {
+    display: block;
+  }
+}
+
 .parallax-section {
   position: relative;
-  height: 50vh;
+  height: 20vh;
   overflow: hidden;
 }
 

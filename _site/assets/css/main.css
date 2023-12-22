@@ -61,6 +61,10 @@ p {
     position: relative;
     width: 100%;
   }
+  .portfolio-card {
+    gap: 24px;
+    margin-bottom: 0px;
+  }
 }
 .portfolio-card {
   cursor: pointer;
@@ -69,7 +73,8 @@ p {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 24px;
+  gap: 20px;
+  margin-bottom: 30px;
 }
 
 .portfolio-mockup-card {
@@ -130,13 +135,31 @@ p {
 .services-section {
   display: flex;
   align-items: center;
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
+}
+
+@media screen and (min-width: 568px) {
+  .services-section {
+    margin-bottom: 10rem;
+  }
+  .sub-icon img {
+    display: block !important;
+  }
+  .sub-icon i {
+    left: 50% !important;
+    font-size: 88px;
+    background-color: #101013 !important;
+  }
+}
+.icon-right {
+  left: 20% !important;
 }
 
 .sub-icon {
   position: relative;
 }
 .sub-icon img {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -145,9 +168,10 @@ p {
 .sub-icon i {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 80%;
   transform: translate(-50%, -50%);
-  font-size: 88px;
+  font-size: 70px;
+  background-color: #09090B;
 }
 
 .card-text {
@@ -163,9 +187,14 @@ p {
 }
 
 #web {
-  margin-top: 10rem;
+  margin-top: 4rem;
 }
 
+@media screen and (min-width: 568px) {
+  #web {
+    margin-top: 10rem;
+  }
+}
 .line {
   border-bottom: 2px solid #202023;
   position: absolute;
@@ -173,14 +202,46 @@ p {
   z-index: 1;
 }
 
+.line-left {
+  left: 20%;
+}
+
+.line-right {
+  left: 38%;
+}
+
+@media screen and (min-width: 568px) {
+  .line {
+    left: 30% !important;
+  }
+}
 .background-photo {
   width: 100vw;
   height: 40vh;
 }
 
+.text-mobile {
+  display: block;
+}
+
+.text-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 568px) {
+  .parallax-section {
+    height: 50vh;
+  }
+  .text-mobile {
+    display: none;
+  }
+  .text-desktop {
+    display: block;
+  }
+}
 .parallax-section {
   position: relative;
-  height: 50vh;
+  height: 20vh;
   overflow: hidden;
 }
 
@@ -204,9 +265,10 @@ p {
 }
 
 .img-propos {
-  height: 70vh;
+  height: 90vh;
   position: sticky;
-  top: 16vh;
+  top: 60px;
+  margin-bottom: -25px;
 }
 
 #propos {
@@ -224,6 +286,35 @@ p {
   height: 10vh;
 }
 
+.overflow {
+  position: relative;
+}
+
+#propos .card-text {
+  width: 90%;
+  margin: auto;
+  background-color: rgba(16, 16, 19, 0.95);
+}
+
+@media screen and (min-width: 568px) {
+  .overflow {
+    position: static;
+  }
+  .propos-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .img-propos {
+    height: 70vh;
+    top: 16vh;
+    margin-bottom: 0;
+  }
+  #propos .card-text {
+    width: 90%;
+    margin: auto;
+    background-color: rgb(16, 16, 19);
+  }
+}
 #contact {
   min-height: 90vh;
 }
