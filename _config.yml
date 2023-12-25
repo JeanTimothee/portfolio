@@ -1,3 +1,4 @@
 url: "http://www.timotheeregis.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # '/portfolio' if on githubpages
 title: "Timothée Régis" # the name of your site, e.g. ACME Corp.
+image: "/assets/img/wagon.jpg"

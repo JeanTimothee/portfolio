@@ -3,7 +3,10 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <title property="og:title" >{{ site.title }}</title>
+    <!-- <title>{{ page.title }} - {{ site.title }}</title> -->
+    <meta content="{{ "/assets/img/wagon.jpg" | relative_url }}" property="og:image">
+
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
