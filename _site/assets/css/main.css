@@ -228,17 +228,6 @@ p {
   display: none;
 }
 
-@media screen and (min-width: 568px) {
-  .parallax-section {
-    height: 50vh;
-  }
-  .text-mobile {
-    display: none;
-  }
-  .text-desktop {
-    display: block;
-  }
-}
 .parallax-section {
   position: relative;
   height: 20vh;
@@ -255,6 +244,17 @@ p {
   background-color: rgba(0, 0, 0, 0.45);
 }
 
+@media screen and (min-width: 568px) {
+  .parallax-section {
+    height: 50vh;
+  }
+  .text-mobile {
+    display: none;
+  }
+  .text-desktop {
+    display: block;
+  }
+}
 .parallax-content {
   position: absolute;
   top: 50%;
